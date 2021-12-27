@@ -1,10 +1,17 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <CounterContainer />
 </template>
+
+<script>
+import CounterContainer from './components/Counter Project/CounterContainer.vue'
+  export default {
+  components: { CounterContainer },
+
+    setup() {
+
+    }
+  }
+</script>
 
 <style>
 #app {
