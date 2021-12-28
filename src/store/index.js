@@ -1,13 +1,10 @@
 import { createStore } from 'vuex'
-
+import axios from 'axios';
+import { counter } from './modules/counter';
+import { counter2 } from './modules/counter2';
 export default createStore({
-  state: {
-    bookList: ['book 1', 'book 2', 'book 3']
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    counter1: counter,
+    counter2: counter2
   }
 })
